@@ -1,0 +1,113 @@
+#nav {
+    display: flex;
+    padding-left: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    width: 48px;
+}
+
+#nav nav {
+    backdrop-filter: blur(80px);
+    background: rgba(255, 255, 255, 0.05);
+    height: 96px;
+    width: 50vw;
+}
+
+@media (max-width:992px) {
+    #nav nav {
+        width: 70vw;
+    }
+}
+
+@media (max-width:768px) {
+    #nav nav {
+        width: 80vw;
+    }
+}
+
+#nav nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.navbar-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    color: var(--color-white);
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    border-bottom: 3px solid var(--color-white);
+}
+
+.offcanvas-button {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    display: none;
+    position: relative; /* Changed from absolute to relative */
+    right: 2rem;
+    z-index: 1060; /* Added z-index to ensure button is below offcanvas */
+}
+
+.offcanvas-bar {
+    font-size: 2rem;
+    display: block;
+    color: var(--color-white);
+}
+
+@media (max-width:576px) {
+    #nav nav {
+        display: none;
+    }
+
+    .offcanvas-button {
+        display: block;
+    }
+}
+
+#nav .btn-close {
+    --bs-btn-close-bg: url(../../images/icon-close.svg);
+}
+
+#nav .offcanvas {
+    backdrop-filter: blur(80px);
+    background: rgba(11, 13, 23, 0.15);
+    z-index: 1061 !important; /* Increased z-index to ensure offcanvas appears above the explore button */
+    position: fixed !important;
+}
+
+.active-sidebar-link {
+    border-right: 3px solid var(--color-white);
+}
+
+#nav .offcanvas ul li {
+    padding: 1rem 0;
+}
+
+.explore-button::after {
+    transition: 0.4s;
+    box-sizing: content-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 272px;
+    width: 272px;
+    background-color: transparent;
+    content: "";
+    border-radius: 50%;
+    z-index: 0; /* Ensure this is below the offcanvas */
+}

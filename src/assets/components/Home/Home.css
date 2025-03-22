@@ -1,0 +1,81 @@
+.home{
+    width: 100%;
+    height: clamp(812px, 100vh, 1024px);
+    display: flex;
+    align-items: flex-end; 
+    background-image: url(../../images/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    z-index: auto;
+}
+
+.home-container{
+    display: flex;
+    margin-bottom: 128px;
+}
+
+.home-h4{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.14em;
+    color: var(--color-blue-300);
+}
+
+.home-h1{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 144px;
+    color: var(--color-white);
+}
+
+.home-p{
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--color-blue-300);
+}
+
+.explore-button{
+    border-radius: 50%;
+    width: 272px;
+    height: 272px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--color-blue-900);
+    transition: 0.4s;
+    position: relative;
+    box-sizing: content-box;
+    z-index: auto;
+}
+
+.explore-button::before{
+    transition: 0.4s;
+    box-sizing: content-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 272px;
+    width: 272px;
+    background-color: transparent;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    z-index: 0;
+}
+
+.explore-button:hover::before{
+    border: 88px solid rgba(255, 255, 255, 0.1);
+}
