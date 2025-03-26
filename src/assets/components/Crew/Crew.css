@@ -1,5 +1,5 @@
 .crew{
-    background-image: url(../../images//background-crew-desktop.jpg);
+    background-image: url(../../images/background-crew-desktop.jpg);
     background-size: cover;
     background-position: center;
     height: clamp(880px, 100vh, 1024px);
@@ -69,6 +69,7 @@
 
     .crew{
         height: 1024px;
+        background-image: url(../../images/background-crew-tablet.jpg);
     }
 
     .crew-h5{
@@ -121,6 +122,7 @@
     
     .crew{
         height: 880px;
+        background-image: url(../../images/background-crew-mobile.jpg);
     }
     
     .crew-h4{
