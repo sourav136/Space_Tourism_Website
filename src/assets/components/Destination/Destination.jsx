@@ -47,6 +47,7 @@ const Destination = () => {
                     <Swiper
                         spaceBetween={50}
                         slidesPerView={1}
+                        loop={true}
                         autoplay={{ delay: 4000, disableOnInteraction: false }}
                         modules={[Autoplay]}
                         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
