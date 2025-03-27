@@ -2,7 +2,7 @@ import React from 'react';
 import './Nav.css';
 import Logo from "../../images/logo.svg"
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars } from "react-icons/fa6";
+import Bars from '../../images/icon-hamburger.svg';
 
 const Nav = () => {
 
@@ -44,7 +44,7 @@ const Nav = () => {
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#offcanvasRight" 
                 aria-controls="offcanvasRight">
-                    <FaBars className='offcanvas-bar'/>
+                    <img src={Bars} className='offcanvas-bar' alt="" />
                 </button>
                 <div className="offcanvas offcanvas-end" 
                 tabIndex="-1" id="offcanvasRight" 

@@ -1,0 +1,45 @@
+.technologies{
+    background-image: url(../../images/background-technology-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1024px;
+    overflow: hidden;
+}
+
+.technologies-swiper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.technologies-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technologies-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.technologies-pagination button{
+    background-color: transparent;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+}

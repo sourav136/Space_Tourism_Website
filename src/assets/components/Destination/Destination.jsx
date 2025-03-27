@@ -50,14 +50,14 @@ const Destination = () => {
                         loop={true}
                         autoplay={{ delay: 4000, disableOnInteraction: false }}
                         modules={[Autoplay]}
-                        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                     >
                         {destinations.map((destination, index) => (
                         <SwiperSlide key={index}>
                             <div className="row">
                                 <div className="col-12 col-lg-6 destination-image-container">
-                                    <img className='destination-image' src={destination.img} alt={destination.name + " image"} />
+                                    <img loading='lazy' className='destination-image' src={destination.img} alt={destination.name + " image"} />
                                 </div>
                                 <div className="col-12 col-lg-6 destination-contents">
                                     <div className="pagination">
