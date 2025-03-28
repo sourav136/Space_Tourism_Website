@@ -10,6 +10,7 @@
     display: flex;
     align-items: flex-end;
     z-index: auto;
+    overflow: hidden;
 }
 
 @media (max-width:768px){

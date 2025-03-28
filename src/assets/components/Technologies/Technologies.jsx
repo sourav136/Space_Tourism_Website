@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 
 const Technologies = () => {
@@ -39,14 +39,13 @@ const Technologies = () => {
     return (
         <div>
             <div className="technologies">
-                <div className="container">
+                <div className="container technologies-container">
+                    <h2 className='technologies-header'>SPACE LAUNCH 101</h2>
                     <Swiper
-                        direction={'vertical'}
-                        pagination={{
-                        clickable: true,
-                        }}
-                        modules={[Pagination]}
-                        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                        autoplay={{ delay: 4000, disableOnInteraction: false }}
+                        modules={[Autoplay]}
+                        loop={true}
+                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                         className="mySwiper technologies-swiper"
                     >
@@ -54,7 +53,7 @@ const Technologies = () => {
                             return(
                                 <SwiperSlide key={index}>
                                     <div className="row">
-                                        <div className="col-12 col-lg-6 technologies-text-container">
+                                        <div className="col-12 col-lg-7 technologies-text-container">
                                             <div className="technologies-pagination">
                                                 {technologies.map((tech, i) => (
                                                     <button
@@ -75,8 +74,8 @@ const Technologies = () => {
                                                 <p className='technology-p'>{technology.description}</p>
                                             </div>
                                         </div>
-                                        <div className="col-12 col-lg-6 technolies-image-container">
-                                            <img src={technology.image} alt={`${technology.name} image`} />
+                                        <div className="col-12 col-lg-5 technologies-image-container">
+                                            <img className='technologies-image' src={technology.image} alt={`${technology.name} image`} />
                                         </div>
                                     </div>
                                 </SwiperSlide>

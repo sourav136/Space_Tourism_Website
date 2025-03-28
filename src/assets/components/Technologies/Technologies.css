@@ -7,12 +7,18 @@
     overflow: hidden;
 }
 
-.technologies-swiper .swiper-slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: max-content;
+.technologies-container{
+    height: 100%;
+}
+
+.technologies-header{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.14em;
+    color: var(--color-white);
+    margin-top: 9rem;
+    margin-bottom: 6rem;
 }
 
 .technologies-text-container{
@@ -21,12 +27,17 @@
     justify-content: center;
 }
 
+.technologies-image-container{
+    padding: 0 1.5rem !important;
+}
+
 .technologies-pagination{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 32px;
+    margin-right: 4rem;
 }
 
 .technologies-pagination button{
@@ -42,4 +53,41 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--color-white);
+    transition: 0.4s;
+}
+
+.technologies-active{
+    background-color: var(--color-white) !important;
+    color: var(--color-blue-900) !important;
+}
+
+
+.technologies-image{
+    width: 100%;
+    display: block;
+}
+
+.terminolgy{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    opacity: 0.5;
+}
+
+.technology-h4{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.technology-p{
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--color-blue-300);
 }
