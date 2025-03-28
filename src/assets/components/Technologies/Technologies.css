@@ -91,3 +91,80 @@
     line-height: 180%;
     color: var(--color-blue-300);
 }
+
+@media (max-width:992px){
+    .technologies-pagination{
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .technologies-header{
+        font-size: 20px;
+    }
+
+    .technologies-text-container{
+        flex-direction: column;
+    }
+
+    .technologies-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .technologies-pagination button{
+        height: 56px;
+        width: 56px;
+        font-size: 24px;
+    }
+
+    .terminolgy{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .technology-h4{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .technology-p{
+        font-size: 16px;
+        text-align: center;
+        max-width: 512px;
+    }
+}
+
+@media (max-width:576px){
+    .technologies{
+        height: 880px;
+    }
+    
+    .technologies-header{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 5.5rem;
+    }
+    
+    .technologies-pagination button{
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+
+    .terminolgy{
+        font-size: 18px;
+    }
+
+    .technology-h4{
+        font-size: 24px;
+    }
+
+    .technology-p{
+        font-size: 15px;
+    }
+}
