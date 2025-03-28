@@ -19,6 +19,49 @@
     }
 }
 
+.home-text{
+    animation: animate-home-text linear 1.5s 1 both;
+    opacity: 0;
+}
+
+@keyframes animate-home-text{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.home-button{
+    animation: animate-home-button linear 1.5s 1 both;
+    opacity: 0;
+    /* animation-timing-function: view(); */
+}
+
+@keyframes animate-home-button{
+    0%{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 .home-container{
     display: flex;
     margin-bottom: 128px;
